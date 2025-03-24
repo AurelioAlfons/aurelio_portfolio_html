@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #171736;
+    color: white;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  /* Base transparent navbar */
+.custom-navbar {
+    background-color: transparent;
+    transition: top 0.3s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+  
+  /* When navbar is visible on scroll-up */
+  .custom-navbar.scrolled {
+    background-color: rgba(30, 30, 63, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* Navbar Links */
+  .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #00ffc3 !important;
+  }
+  
+  /* Section Layout */
+  .section {
+    min-height: 100vh;
+    padding: 120px 20px 80px;
+    text-align: center;
+  }
+  
+  /* Social Icons */
+  .social_home .mdi-facebook { color: rgb(120, 133, 229); font-size: 42px; }
+  .social_home .mdi-linkedin { color: rgb(77, 249, 200); font-size: 42px; }
+  .social_home .mdi-instagram { color: rgb(236, 219, 86); font-size: 42px; }
+  .social_home .mdi-pinterest { color: rgb(255, 110, 85); font-size: 42px; }
+  .social_home .mdi-github { color: rgb(73, 225, 242); font-size: 42px; }
+  
+  .social_home li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  
+  /* Button Styling */
+  .btn-outline-custom {
+    border: 2px solid #fff;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    border-radius: 30px;
+    padding: 10px 26px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  .btn-outline-custom:hover {
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e1e3f;
+    color: white;
+    text-align: center;
+    display: none;
+    padding: 10px 0;
+    z-index: 999;
+  }
+  
