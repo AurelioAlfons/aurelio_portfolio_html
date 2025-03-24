@@ -6,7 +6,12 @@
   }
   
   body {
-    background-color: #171736;
+    background-color: #36171c;
+    background-image: url('../assets/image/bg1.jpg'); /* Change extension if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
@@ -14,7 +19,7 @@
   }
   
   /* Base transparent navbar */
-.custom-navbar {
+  .custom-navbar {
     background-color: transparent;
     transition: top 0.3s ease-in-out, background-color 0.3s, box-shadow 0.3s;
     z-index: 1000;
@@ -31,7 +36,6 @@
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
-  
   
   /* Navbar Links */
   .navbar-brand {
@@ -55,6 +59,7 @@
     min-height: 100vh;
     padding: 120px 20px 80px;
     text-align: center;
+    background-color: rgba(23, 23, 54, 0.7); /* Optional: Adds a slight overlay for readability */
   }
   
   /* Social Icons */
