@@ -18,6 +18,18 @@ body {
   overflow-x: hidden;
 }
 
+.global-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35); /* Controls how dark the screen is */
+  z-index: -1; /* Behind everything */
+  pointer-events: none; /* Allows clicks through */
+}
+
+
 /* Base transparent navbar */
 .custom-navbar {
   background-color: transparent;
